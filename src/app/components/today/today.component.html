@@ -1,0 +1,24 @@
+  <ng-container>
+    @if (isLoading) {
+      <div class="center">
+        <span class="loader"></span>
+      </div>
+    } @else if (error) {
+      <div class="error">{{ error }}</div>
+    } @else {
+      <div class="card">
+        <div>
+          <h3>Dato del dia : </h3>
+          <br>
+          <img [src]="apodData.url" [alt]="apodData.title">
+        </div>
+        <div class="card-content">
+          <h3>{{ apodData.title }}</h3>
+            <div class="date">
+              <p>{{ apodData.explanation }}</p>
+            </div>
+        </div>
+      </div>
+    }
+  </ng-container>
+  

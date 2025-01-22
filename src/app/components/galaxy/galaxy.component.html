@@ -1,0 +1,26 @@
+<h3>Exoplanetas date:</h3>
+<div class="scroll-container">
+    @if (isLoading) {
+      <div class="center">
+        <span class="loader"></span>
+      </div>
+    } @else if (error) {
+      <p>{{ error }}</p>
+    } @else {
+      @for (planet of exoplanets; track $index) {
+        <div class="card">
+          <!-- <img src="https://via.placeholder.com/100" alt="Exoplanet Image"> -->
+          <!-- <h3>{{ planet.name }}</h3> -->
+          <p>Radio: {{ planet.radius || 'Desconocido' }} radios terrestres</p>
+          <p>Temperatura de equilibrio: {{ planet.equilibriumTemperature || 'Desconocida' }} K</p>
+          <p>Estado: {{ planet.discoveryStatus }}</p>
+        </div>
+      } @empty {
+        <p>No hay datos de exoplanetas disponibles.</p>
+      }
+    }
+  </div>
+  
+
+
+  

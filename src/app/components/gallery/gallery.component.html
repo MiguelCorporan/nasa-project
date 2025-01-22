@@ -1,0 +1,21 @@
+
+   <div class="scroll-container">
+    @if (isLoading) {
+      <div class="center">
+        <span class="loader"></span>
+      </div>
+    } @else if (error) {
+      <div class="error">{{ error }}</div>
+    } @else {
+      @for (group of photosGrouped; track $index) {
+        <div class="grid">
+          @for (photo of group; track photo.id) {
+            <div class="grid-item">
+              <img [src]="photo.img_src" [alt]="photo.camera.full_name" />
+            </div>
+          }
+        </div>
+      }
+    }
+  </div>
+  

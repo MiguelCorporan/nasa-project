@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+        fill: rgb(255, 255, 255);
+      
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width:880px) {
+
+    .footer{
+        flex-direction: column;
+    }
+    
+  }

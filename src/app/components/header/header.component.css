@@ -1,0 +1,47 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent; 
+    color: white
+  }
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    margin-right: 10px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background: rgba(92, 92, 92, 0.815); /* Fondo gris claro */
+  }
+  
+  @media screen and (max-width:880px) {
+    .navbar{
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    height: 100vh; 
+    background-image: url('../public/moonOne.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    overflow: hidden; 
+
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
